@@ -12,7 +12,7 @@ class Program
         Console.WriteLine("5 - Par ou Ímpar");
         Console.Write("Opção: ");
         
-        int opcao = int.Parse(Console.ReadLine());
+        int opcao = int.Parse(Console.ReadLine() ?? "0");
 
         switch (opcao)
         {

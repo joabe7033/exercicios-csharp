@@ -5,10 +5,10 @@ class Exercicio04
     public static void Run()
     {
         Console.Write("Digite o primeiro número: ");
-        double numero1 = double.Parse(Console.ReadLine());
+        double numero1 = double.Parse(Console.ReadLine() ?? "0");
 
         Console.Write("Digite o segundo número: ");
-        double numero2 = double.Parse(Console.ReadLine());
+        double numero2 = double.Parse(Console.ReadLine() ?? "0");
 
         if (numero1 > numero2)
         {

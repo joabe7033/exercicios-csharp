@@ -5,7 +5,7 @@ class Exercicio02
     public static void Run()
     {
         Console.Write("Digite seu ano de nascimento: ");
-        int anoNascimento = int.Parse(Console.ReadLine());
+        int anoNascimento = int.Parse(Console.ReadLine() ?? "0");
 
         int anoAtual = 2024;
         int idade = anoAtual - anoNascimento;
